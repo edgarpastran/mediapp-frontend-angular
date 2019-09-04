@@ -1,0 +1,19 @@
+<mat-toolbar>Pefil</mat-toolbar>
+
+<div class="container">
+    <h1 class="bold">Usuario</h1>
+    <mat-list>
+        <mat-list-item>
+            <h4 mat-line>{{ usuario }}</h4>
+        </mat-list-item>
+    </mat-list>
+    
+    <mat-divider></mat-divider>
+    
+    <h1 class="bold">Rol(es)</h1>
+    <mat-list>
+        <mat-list-item *ngFor="let rol of roles">
+            <h4 mat-line>{{ rol.nombre }}</h4>
+        </mat-list-item>
+    </mat-list>  
+</div>
